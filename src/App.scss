@@ -1,0 +1,114 @@
+$bg: #090707;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:ital@0;1&family=Roboto:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+h2{
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    background-color: $bg;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+
+    >img {
+        height: 50%;
+    }
+
+    >div {
+        width: 100%;
+        margin-left: 4vmax;
+
+        >a {
+            margin: 1vmax;
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+    }
+
+    >svg {
+        color: white;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: rgb(144, 139, 139);
+        }
+    }
+}
+
+// banner section
+.banner{
+    height: 600px;
+    background-color: $bg;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+&::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: $bg;
+    opacity: 0.3;
+   h1{
+    font-size: 4rem;
+    width: 40%;
+    z-index: 10;
+   }
+   >p{
+    display: inline-block;
+    width: 40px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+   }
+}
+>div{
+    display: flex;
+}
+button{
+    width: 150px;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    z-index: 10;
+    margin: 1rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+}
+.row{
+    padding: 1rem;
+    background: $bg;
+
+>div{
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+}
+
+}
+.card{
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.5s;
+        margin: 0.8rem;
+    &:hover{
+        transform: translate(-10px) scale(1.05);
+    }
+}
