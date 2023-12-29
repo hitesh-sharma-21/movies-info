@@ -82,7 +82,7 @@ function Home() {
           }
           {
             popularMovies[0] && (
-              <p>{popularMovies[0].overview}</p>
+              <p className='home-content'>{popularMovies[0].overview}</p>
             )
           }
              <div>
